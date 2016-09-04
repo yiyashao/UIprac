@@ -8,10 +8,12 @@
     android:background="?attr/colorPrimary"
     app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
     android:weightSum="1">
-    <FrameLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="0.72">
+        android:layout_weight="0.9"
+        android:background="#2f90cb"
+        android:id="@+id/relative">
 
 <!--
         &lt;!&ndash; This is a centered logo &ndash;&gt;
@@ -27,60 +29,26 @@
 -->
 
         <!-- This is a centered title -->
-        <TextView
-            android:id="@+id/toolbar_title"
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_gravity="center|right"
-            android:gravity="center_vertical|right"
-            android:visibility="visible"
-            android:text="@string/app_name"
-            android:textColor="@color/colorAccent"
-            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
-            android:layout_marginLeft="?attr/actionBarSize" />
+        <!--<TextView-->
+            <!--android:id="@+id/toolbar_title"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_gravity="center|right"-->
+            <!--android:gravity="center_vertical|right"-->
+            <!--android:visibility="visible"-->
+            <!--android:text="@string/app_name"-->
+            <!--android:textColor="@color/colorAccent"-->
+            <!--style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse" />-->
 
-        <Button
-            android:id="@+id/action_bar_title"
-            style="@style/ActionBarButtonWhite" />
+        <!--<Button-->
+            <!--android:id="@+id/action_bar_title"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:background="#40902e" />-->
 
-        <Button
-            android:id="@+id/action_bar_sent"
-            style="@style/ActionBarButtonOffWhite" />
 
-        <Button
-            android:id="@+id/action_bar_staff"
-            style="@style/ActionBarButtonOffWhite" />
-
-        <Button
-            android:id="@+id/action_bar_locations"
-            style="@style/ActionBarButtonOffWhite"
-            android:text="TA"
-            android:layout_gravity="left|center_vertical" />
-
-        <!-- This is a custom left side button -->
-        <!--
-        <ImageButton
-            android:id="@+id/btn_settings"
-            android:layout_width="?attr/actionBarSize"
-            android:layout_height="?attr/actionBarSize"
-            android:layout_marginRight="?attr/actionBarSize"
-            android:layout_gravity="start|center_vertical"
-            android:visibility="invisible"
-            android:src="@drawable/ic_settings_white_24dp"
-            style="@style/Widget.AppCompat.ActionButton" />
-            -->
-
-        <!-- This is a custom right side button -->
-        <!--
-        <ImageButton
-            android:id="@+id/btn_search"
-            android:layout_width="?attr/actionBarSize"
-            android:layout_height="?attr/actionBarSize"
-            android:layout_gravity="end"
-            android:src="@drawable/ic_magnify_white_24dp"
-            style="@style/Widget.AppCompat.ActionButton" />
-            -->
-
-    </FrameLayout>
+    </RelativeLayout>
 </android.support.v7.widget.Toolbar>
